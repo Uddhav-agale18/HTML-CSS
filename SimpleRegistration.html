@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #first{
+            background-color: black;
+            padding: 10px;
+
+        }
+        #first ul li{
+            display: inline;
+            padding: 30px;      
+        }
+        #first a{
+            text-decoration: none;
+            color: white; 
+            margin: 10px;
+            font-size: 20px;
+        }
+        #first ul li a:hover{
+               color: rgb(30, 28, 33);
+               background-color: rgb(130, 115, 115);
+               padding: 10px;
+        }
+        #login{
+            color: yellow;
+            float: right;
+        }
+.container{
+    width:80%;
+    height: 80vh;
+    position: relative;
+    left: 100px;
+    top: 50px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 2px 3px 6px rgb(15, 122, 164),4px 10px 15px rgb(231, 204, 137),10px 16px 5px rgb(45, 12, 12);
+    background-image:linear-gradient(to bottom left,red,yellow,blue)
+}   
+.img{
+    width:45%;
+    height: 80vh;
+opacity: 0.4;
+    background-image: url(lap.jpg);
+float: left;
+background-size: 90% 80vh;
+background-repeat: no-repeat;
+padding: 20px;
+border-radius: 5px;
+
+}
+
+.frm{
+    width: 50%;
+    height: 80vh;
+float: right;
+
+}
+.frm ul{
+    list-style-type: none;
+}
+.frm ul li{
+    height: 14vh;
+}
+.control{
+width:400px;
+height:40px;
+border-radius:8px;
+padding:3px;
+}
+
+
+    </style>
+</head>
+<body>
+    <div id="first">
+        <ul>
+            <li><a href="">About</a></li>
+            <li><a href="">Feedback</a></li>
+            <li><a href="">Servises</a></li>
+            <li><a href="">Cources</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="" id="login" style="color: yellow;">Login</a></li>
+
+        </ul>
+    </div>
+    <div class="container">
+        <div class="img">
+        </div>
+        <div class="frm">
+            <ul>
+                <li>
+                    <input type="text" name="name" value="" placeholder="Enter Name" class="control">
+                </li>
+                <li>
+                    <input type="text" name="name" value="" placeholder="Enter Email" class="control">
+                </li>
+                <li>
+                    <input type="number" name="name" value="" placeholder="Enter Contact" class="control">
+                </li>
+                <li>
+                    <input type="text" name="name" value="" placeholder="Enter UserName" class="control" >
+                </li>
+                <li>
+                    <select name="qual" class="control" style="width: 70vh;">
+                        <option value="">-Select-</option>
+                        <option value="">MCA</option>
+                        <option value="">BE</option>
+                        <option value="">B.Tech</option>
+                        <option value="">ME</option>
+                        <option value="">M.Tech</option>
+                    </select>
+                </li>
+               <li><input type="submit" name="submit" value="Register" class="control" style="border-radius: 10px;background-color: rgb(69, 69, 23);color: aqua; border: 2px solid rgb(202, 205, 116);width: 70vh;"></li>
+                
+            </ul>
+
+        </div>
+
+
+    </div>
+</body>
+</html>
